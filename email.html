@@ -19,6 +19,7 @@
   img.logo {
     width: 140px;
     max-width: 140px;
+    Margin-top: 10px;
     Margin-bottom: 40px;
   }
 
@@ -27,7 +28,7 @@
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
-    color: #666666;
+    color: #888888;
     line-height: 1.4;
     margin: 0;
     padding: 0;
@@ -87,7 +88,7 @@
 
   .wrapper {
     box-sizing: border-box;
-    padding: 80px;
+    padding: 50px 80px;
   }
 
   .footer {
@@ -95,8 +96,7 @@
     color: #aaaaaa;
     clear: both;
     padding-top: 10px;
-    text-align: center;
-    width: 100%;
+    padding: 20px 40px 10px 40px;
   }
 
   .footer td,
@@ -105,7 +105,12 @@
   .footer a {
     color: #aaaaaa;
     font-size: 12px;
-    text-align: center;
+    Margin-bottom: 10px;
+    text-decoration: none;
+  }
+  .footer img {
+    width: 20px;
+    margin-left: 5px;
   }
   /* -------------------------------------
           TYPOGRAPHY
@@ -257,7 +262,7 @@
 
   hr {
     border: 0;
-    border-bottom: 1px solid #f6f6f6;
+    border-bottom: 1px solid #aaaaaa;
     Margin: 20px 0;
   }
   /* -------------------------------------
@@ -303,6 +308,13 @@
       height: auto !important;
       max-width: 100% !important;
       width: auto !important;
+    }
+    .hidden-sm {
+      display: none;
+    }
+    .footer {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
   /* -------------------------------------
@@ -380,7 +392,9 @@
                               <table border="0" cellpadding="0" cellspacing="0">
                                 <tbody>
                                   <tr>
-                                    <td> <a href="http://htmlemail.io" target="_blank">Finish Enrollment</a> </td>
+                                    <td>
+                                      <a href="http://htmlemail.io" target="_blank">Finish Enrollment</a>
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -390,7 +404,7 @@
                       </table>
                       <p>Thank you,</p>
                       <p>If you have any questions contact Bento for Business Customer Support, Email: <a href="mailto:support@bentoforbusiness.com">support@bentoforbusiness.com</a>, Phone: (222) 222-2222 w/ hours.</p>
-                      <p>- The Team at Bento for Business</p>
+                      <span>- The Team at Bento for Business</span>
                     </td>
                   </tr>
                 </table>
@@ -403,13 +417,37 @@
             <table border="0" cellpadding="0" cellspacing="0">
               <tr>
                 <td class="content-block">
-                  <span class="apple-link">Company Inc, 3 Abbey Road, San Francisco CA 94102</span>
-                  <br> Don't like these emails? <a href="http://i.imgur.com/CScmqnj.gif">Unsubscribe</a>.
+                  <p>Bento for Business</p>
+                  <p>
+                    <span class="apple-link">300 Beale St. Suite D</span><br>
+                    <span class="apple-link">San Francisco, CA 94105</span>
+                  </p>
+                  <span>1-(866) 220-8455</span>
+                </td>
+                <td class="content-block align-right hidden-sm">
+                  <p>
+                  <a href="https://www.facebook.com/bentoforbusiness" target="_blank">
+                    <img alt="Facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAbtJREFUWAntWLFKA0EQvZWIICSCha1YiBC7gKWFjSB+g8WBWPgJlvmANFZWgqVVGmsbC1HBQpNP0EILQSxsXN/ceZDszcjqZsMUO/C42zebnXfvdu7CGWvtRpZlp0AbMICGsBAxBHIDgY84WdegitEwIIFfSGhxztVoZxSLI7GGBKoO9QIbU7LvFnXOgCvgGfgAqPY8sABsAidALWILfEfFfWPMea1ySbzh8IRGbQr54iqkXCj/iQW2Ie46ZKGYe7AbKo4uLJZAurXHIc5Vv421By/hHolkA3uOXqsrwNzPhFV2IshYAu+4ghBGb6wLYIfLc1ysW/zCFQO3BXiLozViCaTnHBfLHPkbF0ugVHNWSkj8tAVKOkRevcBJdHEPl//qWHDvjKvhDU6OqsHIkd7FfPOg9UNjbaTQv04hoCeJ0HKL6aHNRhLI2lIn9TqIvbcIva265pKZRBcfoojbxX38WXhwi2JeB9yuwy854/Gh1D2B/N54lXKENQ/+uq6WJuGup+CSQNEaz0Ry0NMocVpyULTGM5Ec9DRKnJYcFK3xTJCD9MFaaxSfgOlrutYYkoM5MAA0OUlaSFP+DTyxL0ciODZ5AAAAAElFTkSuQmCC"/>
+                  </a>
+                  <a href="https://twitter.com/bentoforbiz" target="_blank">
+                    <img alt="Twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAmCAYAAAC76qlaAAAAAXNSR0IArs4c6QAAA7BJREFUWAnNmVtIFFEYx900kzJFu0j3yC5vXagMK9KHKFIh6iUQihB6jHqqlx4jsscoooLoRSJIguohxNJSIioRCwmsRFhLi8hKKm+1/b5lZp3L2dmZ2dnLBz/POd/5znf+ezwzO3M2JyeNFolESuE4tEIYxuETdMJpWOYkh/48mGuLwTnb5gzIQe4TMAJO9ofOszDLOC1tEdwAPVBk7MvBUa51zDd1JNkgZz40gRdrI3gR1MEVGASxCzY54ox2RSLdlCW2AJ8Ocl3V8iZbvCOBfUfgfG3I/JJ6sU+tsWHkOGjImUx1iMGrJTHlElgV0mehMUq9UG9TPoeaUCg0YvC5rpIvl+BeWOd6kDrwLe5GmAf7YA5UQ/RTFDORygZwbosGefzDuF2qhEn6vjB+qUiZoen5STmu1Y3FChodBJ8B05VuDIpTr4nj9+v+ysA6dsCgKQHC+sDJpL/WNMihQWyzUzKPff3ErzVOp6+4+NqMHYr6GnwPSNAFh0D2sJMFdVsdY5JKVrpPORlCKsCLDRN8GapgpjUpvrsQhMk2tlnsriI9zPKQYq8tKrFDVqULXsAAfITDsB+StTCrvdyaxCp8MQFvoNQamMH2K4Rvtc4f3eOsdBnU0ylXrlyAUmaLDauE6BfnPzqbIAynoB2yxT6rhORpTllh+YZcCAc0X7YU5vu2piq64uyhCO3H2aLUoqPd0o429a0ijWuqgAz7fjH/M5WGmHBWvYWADlVQBn1P0TWhmj8mXOs8SplNdxRZTKWZhPPp+omqhA/K6PQ65U53L96UJuEShPj3FCL+ibQzaM3aQnqXwJfSHrgF8jaebtvspFi/j5tiUHgJxw4oBHkmtz1E4UultbLa8uwT10zPKnoUwjdQ7wZlvx6XwnI3wh855bftcQlmUA9Fs9PAFPbdTiRa5o67oqy6bJNW8PXOKcl9mDwrrUf4dx9jp4cgvgTkqCId9pdJqqZnT7JGslw4BnLGl0o770Vq3K1iTYJiOc+QZ/WdUAFBbqE75Ktni0xSpsb4AEcg0eGll//MTYITvXj7/zAk3wj3vShyESsv267/667Vk7QAaqEFgrZzroUoAkOo2YQ/H6ZgAZSBHLBXg3x7FkCQNkSyBvaznCj4N4QXQSOMQSptguQXIdgTBBKuhOswCkHab5LdgHL/y+tiJBMUgvxs0QlT4McmGSSHpSchsB8JjPIdr2gmlR+K5H69HbaA7H85pxbkkUDeCeWI7Bv0QS/Ic04be/gHZcrsP5LR/+6dXtYnAAAAAElFTkSuQmCC"/>
+                  </a>
+                  <a href="https://www.linkedin.com/company/bento-inc-" target="_blank">
+                    <img alt="LinkedIn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAmCAYAAACyAQkgAAAAAXNSR0IArs4c6QAAAjJJREFUWAntmM8rRFEUx9/4kWKjFAuUEllQdpKslI0VkaT83FhY+AOsWfoHECV2UpZiUhaWfiVJFpo0C7EQKTI+R17deZ55p7nvoWZOfbv3nPs9537fee/epnEcLJVKFYApsA/uQBLsggFZ/xeGmCIQBz/Z0n8ROvuTQiPe99diCxCgEaHhRPosIrRBsUOjghMpRYReKHbQcBRlsqeI0HVFuoajKGNB4cDI1bRlHBxz+o4zb1E+/FQEDYFNcAmOwBroDH+nfMUc7wCfVTGoklHTipiQIJ8xlGVI6IrFYtfmOjkH+NVmzGfeS96RxOFL/RHQD+pBDSgEYkmwBzYF5KQYvxtFHkEma/JmQb7KlPC11iZ5zGfAg4IvlFPQ7t1P7tFs7V2RKFffMrwFUK7gC6UZxMkbNvk2Qv1fj1ndcSZwx9NDKq8E1gpiO1x21EIn3Y2yGIvI2UCsiHaiFvp5WLMQ6abUMhkVx0aoW0w73kLcAcfgTZsEb1q4vyH0nn0GuXKqQTdoxZeDtQo01sLrr5TvIEp7pXgP4g7NTfCf8McQIPunnW6TZ8w7o+7ooleksblM54Dm9qiLWui2R1iay0OcExAEWYWNUM2JfghSwPqNglNuI1RRX/Va5TYIskIboZqOBgmQddVVZSNUIyI0jo3QsDqqepicEKrqRFiknOho/hv1+1zyr96vKzaxfEdtuueX6/5wlj8gSv0IX7EXnzX5zzTo19GzT543lCBw4g16/MQH6ltswJIo6nMAAAAASUVORK5CYII="/>
+                  </a>
+                  </p>
+                  <span>Email us: <a href="mailto:support@bentoforbusiness.com">support@bentoforbusiness.com</a></span><br>
+                  <span>Chat with us: <a href="http://bentoforbusiness.com/">bentoforbusiness.com</a></snap><br>
+                  <span><a href="http://bentoforbusiness.com/">Unsubscribe</a></span>
                 </td>
               </tr>
+            </table>
+            <hr>
+            <table border="0" cellpadding="0" cellspacing="0">
               <tr>
-                <td class="content-block powered-by">
-                  Powered by <a href="http://htmlemail.io">HTMLemail</a>.
+                <td class="content-block">
+                  <p>Bento uses 256-bit SSL encryption to protect your personal data. Our servers live in highly secure data centers with state-of the art electronic surveillance and multi-factor access-control systems. Bento is registered with the BBB. All funds are FDIC insured up to $250,000.</p>
+                  <p>The Bento Business Debit Card MasterCard is issued by Community Federal Savings Bank, member FDIC, pursuant to license by MasterCard International Inc.</p>
                 </td>
               </tr>
             </table>
